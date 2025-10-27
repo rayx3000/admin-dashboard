@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    height: 100vh;
+    flex: 1;
+    margin: 0;
+    font-family: "Quicksand", sans-serif;;
+}
+
+.sidebar-header h1{
+    font-family: "Moo Lah Lah", sans-serif;
+}
+
+.sidebar-grid{
+    display: grid;
+    grid-template-columns: 35px 30px;
+    grid-template-rows: 20px 20px 20px 20px 20px 20px;
+    row-gap: 12px;
+    align-items: center;
+}
