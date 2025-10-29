@@ -3,7 +3,12 @@ body{
     height: 100vh;
     flex: 1;
     margin: 0;
-    font-family: "Quicksand", sans-serif;;
+    font-family: "Quicksand", sans-serif;
+    background: #acff99;
+    background: -webkit-linear-gradient(90deg, rgba(172, 255, 153, 1) 25%, rgba(221, 255, 215, 1) 62%, rgba(172, 255, 153, 1) 100%);
+    background: -moz-linear-gradient(90deg, rgba(172, 255, 153, 1) 25%, rgba(221, 255, 215, 1) 62%, rgba(172, 255, 153, 1) 100%);
+    background: linear-gradient(90deg, rgba(172, 255, 153, 1) 25%, rgba(221, 255, 215, 1) 62%, rgba(172, 255, 153, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ACFF99", endColorstr="#ACFF99", GradientType=1);
 }
 
 .sidebar{
@@ -21,6 +26,7 @@ body{
 
 .sidebar-header h1{
     font-family: "Moo Lah Lah", sans-serif;
+    font-size: 2.35em;
 }
 
 .sidebar-container{
@@ -44,4 +50,85 @@ body{
 .sidebar-container div:active{
     transform: scale(1.1);
     color: #555;
+}
+
+.container{
+    padding: 1%;
+}
+
+.header{
+    padding-left: 5%;
+    padding-top: 1.2%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20vw;
+}
+
+.search-container{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header .fa-solid, header .fa-regular{
+    width: 20px;
+    height: 20px;
+}
+
+.search-container #search{
+    width: 33.5vw;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+    background: #82f16e;
+    border: none;
+    font-size: 1.02em;
+}
+
+.search-container #search:focus{
+    outline: none;
+}
+
+.account-container{
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+}
+
+.account-container .fa-bell:hover{
+    color: #333;
+    cursor: pointer;
+}
+
+.account-container .fa-bell:active{
+    color: #555;
+    transform: scale(1.1);
+}
+
+.profile-tag{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.profile-tag:hover{
+    color: #333;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.profile-tag:active{
+    transform: scale(1.02);
+    opacity: 0.75;
+}
+
+.profile-tag img{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.profile-tag span{
+    width: 6.5vw
 }
