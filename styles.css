@@ -6,14 +6,42 @@ body{
     font-family: "Quicksand", sans-serif;;
 }
 
+.sidebar{
+    background: #2EB516;
+    background: -webkit-linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
+    background: linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2EB516", endColorstr="#2EB516", GradientType=0);
+    width: 15.5vw;
+}
+
+.sidebar-header{
+    padding: 8px;
+}
+
 .sidebar-header h1{
     font-family: "Moo Lah Lah", sans-serif;
 }
 
-.sidebar-grid{
+.sidebar-container{
+    margin-bottom: 30px;
+    padding: 3px 3px 3px 12px;
+    font-size: 0.9em;
+}
+
+.sidebar-container div{
     display: grid;
     grid-template-columns: 35px 30px;
-    grid-template-rows: 20px 20px 20px 20px 20px 20px;
-    row-gap: 12px;
     align-items: center;
+    margin-bottom: -20px;
+}
+
+.sidebar-container div:hover{
+    color: #333;
+    cursor: pointer;
+}
+
+.sidebar-container div:active{
+    transform: scale(1.1);
+    color: #555;
 }
