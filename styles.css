@@ -9,6 +9,7 @@ body{
     background: -moz-linear-gradient(90deg, rgba(172, 255, 153, 1) 25%, rgba(221, 255, 215, 1) 62%, rgba(172, 255, 153, 1) 100%);
     background: linear-gradient(90deg, rgba(172, 255, 153, 1) 25%, rgba(221, 255, 215, 1) 62%, rgba(172, 255, 153, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ACFF99", endColorstr="#ACFF99", GradientType=1);
+    overflow-y: hidden;
 }
 
 .sidebar{
@@ -17,7 +18,10 @@ body{
     background: -moz-linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
     background: linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2EB516", endColorstr="#2EB516", GradientType=0);
-    width: 15.5vw;
+}
+
+.sidebar div{
+    width: 15vw;
 }
 
 .sidebar-header{
@@ -141,7 +145,6 @@ body{
     gap: 20px;
     align-items: center;
     font-weight: bold;
-    margin-right: -20vw;
 }
 
 .account-greeting-container img{
@@ -195,4 +198,60 @@ body{
 .main{
     display: flex;
     gap: 20vh;
+    max-height: 78vh;
+    overflow-y: auto;
+}
+
+.main-left-content h1{
+    margin-left: 20px;
+}
+
+.card-grid{
+    display: grid;
+    grid-template-columns: 23vw 23vw;
+    row-gap: 28px;
+    column-gap: 30px;
+    padding-left: 3%;
+    padding-bottom: 5%;
+}
+
+.card{
+    background: #2EB516;
+    background: -webkit-linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
+    background: linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2EB516", endColorstr="#2EB516", GradientType=0);
+    padding: 5% 8%;
+    border-radius: 20px;
+    position: relative;
+    border-left: 8px solid #0d4903;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card p{
+    font-size: 0.9em;
+}
+
+.card-icons{
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+.card-icons i{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.card-icons i:hover{
+    color: #333;
+}
+
+.card-icons i:active{
+    transform: scale(1.1);
+    color: #555;
 }
