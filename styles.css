@@ -261,7 +261,7 @@ body{
     padding-right: 2%;
 }
 
-.announcements-container{
+.announcements-container, .trending-container{
     background: #2EB516;
     background: -webkit-linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
     background: -moz-linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
@@ -277,4 +277,47 @@ body{
 
 .announcements-container div p{
     font-size: 0.8em;
+}
+
+.trending-container > div{
+    display: grid;
+    grid-template-columns: 65px 175px;
+    grid-template-rows: 68.5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending-container img{
+    width: 36.5px;
+    border-radius: 50%;
+}
+
+.trending-container img:hover{
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.trending-container img:active{
+    opacity: 0.75;
+    transform: scale(1.05)
+}
+
+.user-name-label{   
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user-name-label #user-name{
+    font-weight: bold;
+}
+
+.user-name-label #user-name:hover{
+    color: #333;
+    cursor: pointer;
+}
+
+.user-name-label #user-name:active{
+    color: #555;
+    transform: scale(1.05);
 }
