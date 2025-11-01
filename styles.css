@@ -321,3 +321,15 @@ body{
     color: #555;
     transform: scale(1.05);
 }
+
+@media(max-width: 1350px) {
+    .dashboard-options-container{
+        margin-left: -12vw;
+    }
+}
+
+@media (max-width: 1150px) {
+    .trending-container > div{
+        grid-template-columns: 62px 125px;
+    }
+}
