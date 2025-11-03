@@ -197,7 +197,7 @@ body{
 
 .main{
     display: flex;
-    gap: 20vh;
+    gap: 15vh;
     max-height: 78vh;
     overflow-y: auto;
     width: 83vw;
@@ -330,6 +330,39 @@ body{
 
 @media (max-width: 1150px) {
     .trending-container > div{
-        grid-template-columns: 62px 125px;
+        grid-template-columns: 62px 10vw;
+    }
+}
+
+
+@media(max-width: 1050px) {
+    .header{
+        column-gap: 8vw;
+    }
+}
+
+@media(max-width: 930px) {
+    .sidebar, .header, .container{
+        font-size: 0.88em;
+    }
+
+    .main{
+        gap: 5vw;
+        width: 80vw;
+    }
+
+    .sidebar div{
+        width: 17.5vw;
+    }
+
+    .dashboard-options-container button{
+        padding: 3.5px 5px;
+        width: 75px;
+    }
+}
+
+@media(max-width: 750px) {
+    .card-grid{
+        grid-template-columns: 1fr;
     }
 }
