@@ -197,7 +197,7 @@ body{
 
 .main{
     display: flex;
-    gap: 15vh;
+    gap: 7.25vw;
     max-height: 78vh;
     overflow-y: auto;
     width: 83vw;
@@ -258,7 +258,8 @@ body{
 }
 
 .main-right-content{
-    padding-right: 2%;
+
+    max-width: 25vw;
 }
 
 .announcements-container, .trending-container{
@@ -281,7 +282,7 @@ body{
 
 .trending-container > div{
     display: grid;
-    grid-template-columns: 65px 175px;
+    grid-template-columns: 55px 15.8vw;
     grid-template-rows: 68.5px;
     align-items: center;
     justify-content: center;
@@ -330,7 +331,7 @@ body{
 
 @media (max-width: 1150px) {
     .trending-container > div{
-        grid-template-columns: 62px 10vw;
+        grid-template-columns: 55px 13.5vw;
     }
 }
 
