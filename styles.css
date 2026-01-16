@@ -12,6 +12,38 @@ body{
     overflow: hidden;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(172, 255, 153, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
+    border-radius: 10px;
+    border: 1px solid #00c257;
+    box-shadow: 
+        0 0 10px rgba(9, 255, 0, 0.5),
+        inset 0 0 6px rgba(255, 255, 255, 0.3);
+    position: relative;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgb(81, 230, 55) 0%, rgb(141, 255, 121) 50%, rgb(85, 238, 58) 100%);
+    box-shadow: 
+        0 0 20px rgba(60, 255, 0, 0.8),
+        inset 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, rgb(82, 255, 52) 0%, rgb(175, 255, 151) 50%, rgb(108, 235, 49) 100%);
+    box-shadow: 
+        0 0 30px rgb(70, 255, 24),
+        inset 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
 .sidebar{
     background: #2EB516;
     background: -webkit-linear-gradient(180deg, rgba(46, 181, 22, 1) 0%, rgba(116, 255, 92, 1) 50%, rgba(46, 181, 22, 1) 100%);
